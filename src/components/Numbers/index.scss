@@ -1,0 +1,42 @@
+.numbers {
+  padding: 50px 0;
+  background-color: #f3f3f3;
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__span {
+    color: #008bd9;
+    font-size: 48px;
+  }
+  &__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .numbers {
+    &__items {
+      gap: 50px;
+    }
+    &__span {
+      color: #008bd9;
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .numbers {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 120px);
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+}

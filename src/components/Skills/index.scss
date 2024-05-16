@@ -1,0 +1,97 @@
+.skills {
+  padding: 90px 0 70px;
+  &__content {
+    display: grid;
+    grid-template-columns: 31% 125px 48%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
+  }
+  &__picture {
+    height: 450px;
+    background-color: #9cceeb;
+  }
+  &__btn {
+    text-align: center;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 15px 5px;
+    margin-bottom: 22px;
+    color: #000;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background-color: #9cceeb;
+      transition: 0.3s;
+    }
+  }
+  .activeBtn {
+    background-color: #008bd9;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      background-color: #008bd9;
+    }
+  }
+  &__text {
+    margin-bottom: 8px;
+    margin-left: 5px;
+  }
+  &__line {
+    width: 100%;
+    height: 5px;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 15px;
+    overflow-x: hidden;
+  }
+  &__activeLine {
+    height: 5px;
+    position: absolute;
+    top: 0;
+    background-color: #008bd9;
+    border-radius: 3px;
+    animation: skillLine 2s;
+  }
+}
+
+@keyframes skillLine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .skills {
+    &__content {
+      display: block;
+    }
+    &__picture {
+      margin-bottom: 30px;
+    }
+    &__tab {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    &__btn {
+      padding: 10px;
+      background-color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .skills {
+    &__btn {
+      font-size: 12px;
+    }
+  }
+}

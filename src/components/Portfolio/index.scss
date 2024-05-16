@@ -1,0 +1,82 @@
+.portfolio {
+  padding: 90px 0 70px;
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__tabBtn {
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+      background-color: #9cceeb;
+      transition: 0.3s;
+    }
+  }
+  .activeBtn {
+    background-color: #008bd9;
+    color: #fff;
+    &:hover {
+      background-color: #008bd9;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 20px));
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  .portfolio {
+    &__cards {
+      grid-template-columns: repeat(3, calc(33.333% - 15px));
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .portfolio {
+    &__cards {
+      grid-template-columns: repeat(2, calc(50% - 10px));
+      gap: 15px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .portfolio {
+    &__tabBtn {
+      font-size: 14px;
+      padding: 7px 15px;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .portfolio {
+    &__tab {
+      gap: 5px;
+    }
+    &__tabBtn {
+      font-size: 12px;
+      padding: 10px;
+      border-radius: 0;
+    }
+    &__cards {
+      grid-template-columns: repeat(1, 320px);
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .portfolio {
+    &__tab {
+      display: none;
+    }
+  }
+}
+

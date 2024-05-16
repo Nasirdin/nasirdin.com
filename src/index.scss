@@ -1,0 +1,64 @@
+@import url(./fonts/Montserrat/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionTitle {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .skills,
+  .portfolio,
+  .experience,
+  .contacts {
+    padding: 50px 0 !important;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
