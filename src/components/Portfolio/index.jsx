@@ -3,100 +3,15 @@ import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import PortfolioCard from "../PortfolioCard";
-import { rightAnimation, rightAnimationForMobile } from "../../Animations";
+import { rightAnimationForMobile } from "../../animations";
 import Title from "../Title";
+import { portfolioTab, projects } from "../../constants";
 
 // ---- Components ---- //
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("all");
 
-  const portfolioTab = [
-    {
-      id: 1,
-      name: "All",
-      keyWord: "all",
-    },
-    {
-      id: 2,
-      name: "Full-Stack",
-      keyWord: "fullstack",
-    },
-    {
-      id: 3,
-      name: "Front-End",
-      keyWord: "frontend",
-    },
-    {
-      id: 4,
-      name: "Back-End",
-      keyWord: "backend",
-    },
-    {
-      id: 5,
-      name: "Web3",
-      keyWord: "web3",
-    },
-  ];
-
-  const projects = [
-    {
-      id: 1,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "frontend",
-    },
-    {
-      id: 2,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "backend",
-    },
-    {
-      id: 3,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "web3",
-    },
-    {
-      id: 1,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "frontend",
-    },
-    {
-      id: 2,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "backend",
-    },
-    {
-      id: 3,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "web3",
-    },
-    {
-      id: 1,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "frontend",
-    },
-    {
-      id: 2,
-      name: "GrandBazar",
-      tag: ["Front-End"],
-      link: "/grandbazar",
-      keyWord: "backend",
-    },
-  ];
   return (
     <div className="portfolio">
       <div className="container">
@@ -115,6 +30,7 @@ const Portfolio = () => {
               whileInView="visible"
               custom={indx}
               variants={rightAnimationForMobile}
+              key={indx}
             >
               {item.name}
             </motion.li>
@@ -122,7 +38,7 @@ const Portfolio = () => {
         </ul>
         <ul className="portfolio__cards">
           {projects.map((item, indx) => (
-            <PortfolioCard item={item} indx={indx} />
+            <PortfolioCard item={item} indx={indx} key={indx} />
           ))}
         </ul>
       </div>

@@ -9,6 +9,7 @@
   }
   &__item {
     text-align: center;
+    width: 115px;
   }
   &__span {
     color: #008bd9;
@@ -19,14 +20,24 @@
   }
 }
 
+@media (max-width: 800px) {
+  .numbers {
+    &__items {
+      gap: 70px;
+    }
+  }
+}
 @media (max-width: 700px) {
   .numbers {
     &__items {
-      gap: 50px;
+      gap: 40px;
     }
     &__span {
       color: #008bd9;
       font-size: 40px;
+    }
+    &__text {
+      font-size: 18px;
     }
   }
 }
@@ -36,7 +47,7 @@
       display: grid;
       grid-template-columns: repeat(2, 120px);
       gap: 30px;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 }

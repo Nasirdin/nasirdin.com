@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import TagIcon from "../../assets/icons/tag.svg";
-import { upAnimation } from "../../Animations";
+import { upAnimation } from "../../animations";
 
 // ---- Components ---- //
 
@@ -15,13 +15,14 @@ const PortfolioCard = ({ item, indx }) => {
       whileInView="visible"
       custom={indx}
       variants={upAnimation}
+      key={indx}
     >
       <div className="portfolioCard__img"></div>
       <div className="portfolioCard__content">
         <h3 className="portfolioCard__title">{item.name}</h3>
         <ul className="portfolioCard__tags">
-          {item.tag.map((tag) => (
-            <li className="tag">
+          {item.tag.map((tag, key) => (
+            <li className="tag" key={key}>
               <img src={TagIcon} alt="tag-icon" />
               {tag}
             </li>

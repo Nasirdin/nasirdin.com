@@ -41,6 +41,6 @@ export const upAnimation = {
 
 export const rightAnimationForMobile = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, x: 100 },
+  hidden: { ...baseAnimation.hidden, x: 60 },
   visible: (custom) => baseAnimation.visible(custom, 0, 0, 0),
 };

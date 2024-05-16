@@ -6,111 +6,14 @@ import {
   downAnimation,
   downBtnAnimation,
   leftAnimation,
-} from "../../Animations";
+} from "../../animations";
 import Title from "../Title";
+import { skills, tab } from "../../constants";
 
 // ---- Components ---- //
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("frontend");
-
-  const tab = [
-    {
-      id: 1,
-      name: "Front-End",
-      keyWord: "frontend",
-    },
-    {
-      id: 1,
-      name: "Back-End",
-      keyWord: "backend",
-    },
-    {
-      id: 1,
-      name: "Web3",
-      keyWord: "web3",
-    },
-    {
-      id: 1,
-      name: "Other",
-      keyWord: "other",
-    },
-  ];
-
-  const skills = [
-    {
-      id: 1,
-      name: "HTML",
-      keyWord: "frontend",
-      done: 90,
-    },
-    {
-      id: 2,
-      name: "css",
-      keyWord: "frontend",
-      done: 40,
-    },
-    {
-      id: 3,
-      name: "js",
-      keyWord: "frontend",
-      done: 60,
-    },
-    {
-      id: 4,
-      name: "nodejs",
-      keyWord: "backend",
-      done: 90,
-    },
-    {
-      id: 5,
-      name: "express",
-      keyWord: "backend",
-      done: 90,
-    },
-    {
-      id: 6,
-      name: "mongo",
-      keyWord: "backend",
-      done: 90,
-    },
-    {
-      id: 7,
-      name: "solidity",
-      keyWord: "web3",
-      done: 90,
-    },
-    {
-      id: 8,
-      name: "Web3.js",
-      keyWord: "web3",
-      done: 90,
-    },
-    {
-      id: 9,
-      name: "ethers.js",
-      keyWord: "web3",
-      done: 90,
-    },
-    {
-      id: 10,
-      name: "C#",
-      keyWord: "other",
-      done: 90,
-    },
-    {
-      id: 11,
-      name: "Pyhton",
-      keyWord: "other",
-      done: 90,
-    },
-    {
-      id: 12,
-      name: "PhotoShop",
-      keyWord: "other",
-      done: 90,
-    },
-  ];
 
   return (
     <div className="skills">
@@ -137,6 +40,7 @@ const Skills = () => {
                 whileInView="visible"
                 custom={indx}
                 variants={downBtnAnimation}
+                key={indx}
               >
                 {item.name}
               </motion.li>

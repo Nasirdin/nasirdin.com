@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { animate, useMotionValue, useTransform, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { numbers } from "../../constants";
 
 import "./index.scss";
 
@@ -25,13 +26,6 @@ const Counter = ({ num }) => {
 };
 
 const Numbers = () => {
-  const numbers = [
-    { id: 1, number: 20, name: "All" },
-    { id: 2, number: 16, name: "Front-End" },
-    { id: 3, number: 5, name: "Back-End" },
-    { id: 4, number: 3, name: "Web3" },
-  ];
-
   return (
     <div className="numbers">
       <div className="container">

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
-import { downAnimation } from "../../Animations";
+import { downAnimation } from "../../animations";
 
 // ---- Components ---- //
 
@@ -15,6 +15,7 @@ const Title = ({ title }) => {
           whileInView="visible"
           custom={indx / 4}
           variants={downAnimation}
+          key={indx}
         >
           {letter}
         </motion.span>
