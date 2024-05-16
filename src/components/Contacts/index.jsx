@@ -3,12 +3,11 @@ import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import Title from "../Title";
-import { upAnimation } from "../../animations";
+import { upAnimation } from "../../Animations";
 import { contatcsArr } from "../../constants";
 // ---- Components ---- //
 
 const Contacts = () => {
-
   return (
     <div className="contacts">
       <div className="container">

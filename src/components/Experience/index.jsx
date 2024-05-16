@@ -2,14 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
-import { downAnimation } from "../../animations";
+import { downAnimation } from "../../Animations";
 import Title from "../Title";
 import { jobs } from "../../constants";
 
 // ---- Components ---- //
 
 const Experience = () => {
- 
   return (
     <div className="experience">
       <div className="container">

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
-import { downAnimation } from "../../animations";
+import { downAnimation } from "../../Animations";
 
 // ---- Components ---- //
 

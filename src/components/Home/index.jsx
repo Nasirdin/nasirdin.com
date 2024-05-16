@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
-import { downAnimation, leftAnimation, rightAnimation } from "../../animations";
+import { downAnimation, leftAnimation, rightAnimation } from "../../Animations";
 
 // ---- Components ---- //
 

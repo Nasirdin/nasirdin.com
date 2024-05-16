@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import TagIcon from "../../assets/icons/tag.svg";
-import { upAnimation } from "../../animations";
+import { upAnimation } from "../../Animations";
 
 // ---- Components ---- //
 

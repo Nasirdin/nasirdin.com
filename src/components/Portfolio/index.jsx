@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import PortfolioCard from "../PortfolioCard";
-import { rightAnimationForMobile } from "../../animations";
+import { rightAnimationForMobile } from "../../Animations";
 import Title from "../Title";
 import { portfolioTab, projects } from "../../constants";
 

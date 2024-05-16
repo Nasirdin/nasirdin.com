@@ -6,7 +6,7 @@ import {
   downAnimation,
   downBtnAnimation,
   leftAnimation,
-} from "../../animations";
+} from "../../Animations";
 import Title from "../Title";
 import { skills, tab } from "../../constants";
 
