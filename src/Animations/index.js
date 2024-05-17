@@ -23,13 +23,13 @@ export const downBtnAnimation = {
 
 export const leftAnimation = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, x: -300 },
+  hidden: { ...baseAnimation.hidden, x: -30 },
   visible: (custom) => baseAnimation.visible(custom, 0, 0, 0),
 };
 
 export const rightAnimation = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, x: 300 },
+  hidden: { ...baseAnimation.hidden, x: 30 },
   visible: (custom) => baseAnimation.visible(custom, 0, 0, 0),
 };
 export const upAnimation = {
