@@ -37,6 +37,11 @@ export const upAnimation = {
   hidden: { ...baseAnimation.hidden, y: 30 },
   visible: (custom) => baseAnimation.visible(custom),
 };
+export const bigUpAnimation = {
+  ...baseAnimation,
+  hidden: { ...baseAnimation.hidden, y: 300 },
+  visible: (custom) => baseAnimation.visible(custom),
+};
 
 
 export const rightAnimationForMobile = {

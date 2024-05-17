@@ -7,8 +7,8 @@ import { upAnimation } from "../../Animations";
 
 // ---- Components ---- //
 
-const PortfolioCard = ({ item, indx }) => {
-  const { name, tag, link, keyWord, img } = item;
+const PortfolioCard = ({ setOpenCardId, item, indx }) => {
+  const { id, name, tag, keyWord, img } = item;
   return (
     <motion.li
       className="portfolioCard"
@@ -17,6 +17,9 @@ const PortfolioCard = ({ item, indx }) => {
       custom={indx / 2}
       variants={upAnimation}
       key={indx}
+      onClick={() => {
+        setOpenCardId(id);
+      }}
     >
       <div className="portfolioCard__img">
         <img src={img} alt={keyWord} />

@@ -320,7 +320,7 @@ export const projects = [
   },
   {
     id: 8,
-    name: "Eth Paris Telegram bot",
+    name: "Eth Paris",
     tag: ["backend"],
     link: "/grandbazar",
     keyWord: "backend",
@@ -328,7 +328,7 @@ export const projects = [
   },
   {
     id: 9,
-    name: "Eth Barcelona Telegram bot",
+    name: "Eth Barcelona",
     tag: ["backend"],
     link: "/grandbazar",
     keyWord: "backend",
@@ -336,7 +336,7 @@ export const projects = [
   },
   {
     id: 10,
-    name: "Devcon Bogota Telegram bot",
+    name: "Devcon Bogota",
     tag: ["backend"],
     link: "/grandbazar",
     keyWord: "backend",

@@ -5,9 +5,11 @@ import PortfolioCard from "../PortfolioCard";
 import { rightAnimationForMobile } from "../../Animations";
 import Title from "../Title";
 import { portfolioTab, projects } from "../../constants";
+import PortfolioOverlay from "../PortfolioOverlay";
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("all");
+  const [openCardId, setOpenCardId] = useState(null);
 
   return (
     <div className="portfolio">
@@ -35,9 +37,22 @@ const Portfolio = () => {
         </ul>
         <ul className="portfolio__cards">
           {[...projects].reverse().map((item, indx) => (
-            <PortfolioCard item={item} indx={indx} key={indx} />
+            <PortfolioCard
+              setOpenCardId={setOpenCardId}
+              item={item}
+              indx={indx}
+              key={indx}
+            />
           ))}
         </ul>
+        {!openCardId ? (
+          ""
+        ) : (
+          <PortfolioOverlay
+            openCardId={openCardId}
+            setOpenCardId={setOpenCardId}
+          />
+        )}
       </div>
     </div>
   );

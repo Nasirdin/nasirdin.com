@@ -2,12 +2,17 @@
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  background-color: #f3f3f3;
+  background-color: #c5e9fda5;
+  cursor: pointer;
   &__img {
     height: 138px;
     width: 100%;
     background-color: #9cceeb;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     img {
+      height: 100%;
       width: 100%;
     }
   }
@@ -21,6 +26,10 @@
   &__tags {
     text-align: right;
     font-size: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
   }
   .tag {
     display: flex;
