@@ -17,6 +17,7 @@ import DashOnout from "../assets/portfolio/dash.jpg";
 import farmig from "../assets/portfolio/farming.jpg";
 import Swap from "../assets/portfolio/swap.jpg";
 import NFT from "../assets/portfolio/nft.jpg";
+import Dex from "../assets/portfolio/unifactory.jpg";
 
 export const tab = [
   {
@@ -279,9 +280,9 @@ export const projects = [
   },
   {
     id: 4,
-    name: "DeFinance (DEX)",
+    name: "DAO Widget",
     tag: ["Front-End"],
-    link: "/dex",
+    link: "/dao",
     keyWord: "frontend",
     img: Dao,
   },
@@ -295,11 +296,19 @@ export const projects = [
   },
   {
     id: 6,
-    name: "CROSS-CHAIN exchange page",
+    name: "CROSS-CHAIN exchange",
     tag: ["Front-End"],
     link: "/cross-chain",
     keyWord: "frontend",
     img: CrossChain,
+  },
+  {
+    id: 7,
+    name: "UniFactory",
+    tag: ["Front-End", "Web3"],
+    link: "/grandbazar",
+    keyWord: "web3",
+    img: Dex,
   },
   {
     id: 7,
