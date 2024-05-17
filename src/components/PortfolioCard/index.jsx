@@ -8,23 +8,26 @@ import { upAnimation } from "../../Animations";
 // ---- Components ---- //
 
 const PortfolioCard = ({ item, indx }) => {
+  const { name, tag, link, keyWord, img } = item;
   return (
     <motion.li
       className="portfolioCard"
       initial="hidden"
       whileInView="visible"
-      custom={indx}
+      custom={indx / 2}
       variants={upAnimation}
       key={indx}
     >
-      <div className="portfolioCard__img"></div>
+      <div className="portfolioCard__img">
+        <img src={img} alt={keyWord} />
+      </div>
       <div className="portfolioCard__content">
-        <h3 className="portfolioCard__title">{item.name}</h3>
+        <h3 className="portfolioCard__title">{name}</h3>
         <ul className="portfolioCard__tags">
-          {item.tag.map((tag, key) => (
+          {tag.map((itag, key) => (
             <li className="tag" key={key}>
               <img src={TagIcon} alt="tag-icon" />
-              {tag}
+              {itag}
             </li>
           ))}
         </ul>

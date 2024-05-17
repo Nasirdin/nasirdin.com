@@ -36,7 +36,7 @@ const Contacts = () => {
               <div className="contacts__img">
                 <img src={item.icon} alt="icon" />
               </div>
-              <a className="contacts__link" href="/#">
+              <a className="contacts__link" href={item.link} target="_blank">
                 {item.text}
               </a>
             </motion.li>
