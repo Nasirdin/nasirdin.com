@@ -189,7 +189,7 @@ export const skills = [
   },
   {
     id: 25,
-    name: "Pyhton",
+    name: "Python",
     keyWord: "other",
     done: 25,
   },
