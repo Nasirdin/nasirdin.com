@@ -11,7 +11,7 @@ const baseAnimation = {
 
 export const downAnimation = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, y: -50 },
+  hidden: { ...baseAnimation.hidden, y: -30 },
   visible: (custom) => baseAnimation.visible(custom),
 };
 
@@ -34,13 +34,13 @@ export const rightAnimation = {
 };
 export const upAnimation = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, y: 50 },
+  hidden: { ...baseAnimation.hidden, y: 30 },
   visible: (custom) => baseAnimation.visible(custom),
 };
 
 
 export const rightAnimationForMobile = {
   ...baseAnimation,
-  hidden: { ...baseAnimation.hidden, x: 60 },
+  hidden: { ...baseAnimation.hidden, x: 30 },
   visible: (custom) => baseAnimation.visible(custom, 0, 0, 0),
 };
