@@ -1,10 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
 import { projects } from "../../constants";
-import { FaLink } from "react-icons/fa6";
-import { GrTag } from "react-icons/gr";
+// import { FaLink } from "react-icons/fa6";
+// import { GrTag } from "react-icons/gr";
 
 // ---- Components ---- //
 
