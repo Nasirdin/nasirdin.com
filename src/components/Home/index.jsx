@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
+import cv from "../../assets/cv.pdf";
 import { downAnimation, leftAnimation, rightAnimation } from "../../Animations";
 
 // ---- Components ---- //
@@ -34,7 +35,8 @@ const Home = () => {
             className="home__btn"
             custom={3}
             variants={downAnimation}
-            href="/#"
+            href={cv}
+            download={"Nasirdin-Zhaparkulov CV"}
           >
             Download CV
           </motion.a>
