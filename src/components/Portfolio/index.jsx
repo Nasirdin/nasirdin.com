@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./index.scss";
 import PortfolioCard from "../PortfolioCard";
@@ -10,6 +10,14 @@ import PortfolioOverlay from "../PortfolioOverlay";
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [openCardId, setOpenCardId] = useState(null);
+
+  useEffect(() => {
+    if (openCardId !== null) {
+      document.body.style.overflow = "hidden";
+    } else if (openCardId === null) {
+      document.body.style.overflow = "";
+    }
+  }, [openCardId]);
 
   return (
     <div className="portfolio">
