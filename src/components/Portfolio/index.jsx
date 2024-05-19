@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./index.scss";
 import PortfolioCard from "../PortfolioCard";
-import { rightAnimationForMobile } from "../../Animations";
+import { rightAnimationForMobile, upAnimation } from "../../Animations";
 import Title from "../Title";
 import { portfolioTab, projects } from "../../constants";
 import PortfolioOverlay from "../PortfolioOverlay";
@@ -15,7 +15,16 @@ const Portfolio = () => {
     <div className="portfolio">
       <div className="container">
         <Title title={"Portfolio"} />
-
+        <motion.p
+          className="contacts__text subtitle"
+          initial="hidden"
+          whileInView="visible"
+          custom={0.5}
+          variants={upAnimation}
+        >
+          Explore my diverse portfolio showcasing innovative projects across
+          various domains.
+        </motion.p>
         <ul className="portfolio__tab">
           {portfolioTab.map((item, indx) => (
             <motion.li
@@ -29,25 +38,30 @@ const Portfolio = () => {
               whileInView="visible"
               custom={indx}
               variants={rightAnimationForMobile}
-              key={item.keyWord}
+              key={indx}
             >
               {item.name}
             </motion.li>
           ))}
         </ul>
         <ul className="portfolio__cards">
-          {[...projects].reverse().map((item, indx) => (
-            <PortfolioCard
-              setOpenCardId={setOpenCardId}
-              item={item}
-              indx={indx}
-              key={indx}
-            />
-          ))}
+          {[...projects]
+            .filter((item) => {
+              // Если активный таб - "all", показываем все проекты
+              if (activeTab === "all") return true;
+              // Иначе фильтруем проекты по ключевому слову
+              return item.keyWord.includes(activeTab);
+            })
+            .map((item, indx) => (
+              <PortfolioCard
+                setOpenCardId={setOpenCardId}
+                item={item}
+                indx={indx}
+                key={indx}
+              />
+            ))}
         </ul>
-        {!openCardId ? (
-          ""
-        ) : (
+        {openCardId && (
           <PortfolioOverlay
             openCardId={openCardId}
             setOpenCardId={setOpenCardId}

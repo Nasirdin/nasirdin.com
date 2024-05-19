@@ -6,6 +6,7 @@ import {
   downAnimation,
   downBtnAnimation,
   leftAnimation,
+  upAnimation,
 } from "../../Animations";
 import Title from "../Title";
 import { skills, tab } from "../../constants";
@@ -19,6 +20,16 @@ const Skills = () => {
     <div className="skills">
       <div className="container">
         <Title title={"Skills"} />
+        <motion.p
+          className="contacts__text subtitle"
+          initial="hidden"
+          whileInView="visible"
+          custom={0.5}
+          variants={upAnimation}
+        >
+          Highlight my diverse set of skills and knowledge in various
+          technologies and disciplines
+        </motion.p>
         <div className="skills__content">
           <motion.div
             className="skills__picture"

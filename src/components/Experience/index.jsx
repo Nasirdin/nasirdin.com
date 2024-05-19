@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // ---- Style ---- //
 import "./index.scss";
-import { downAnimation } from "../../Animations";
+import { downAnimation, upAnimation } from "../../Animations";
 import Title from "../Title";
 import { jobs } from "../../constants";
 
@@ -13,7 +13,16 @@ const Experience = () => {
     <div className="experience">
       <div className="container">
         <Title title={"Experience"} />
-
+        <motion.p
+          className="contacts__text subtitle"
+          initial="hidden"
+          whileInView="visible"
+          custom={0.5}
+          variants={upAnimation}
+        >
+          During my career in Front-End development, I have accumulated almost
+          three years of experience.
+        </motion.p>
         <ul className="experience__items">
           {jobs.reverse().map((item, indx) => (
             <motion.li
