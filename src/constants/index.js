@@ -1,5 +1,5 @@
 import Email from "../assets/icons/email.svg";
-import Phone from "../assets/icons/phone.svg";
+import Github from "../assets/icons/github.svg";
 import Linkedin from "../assets/icons/linkedin.svg";
 import Telegram from "../assets/icons/telegram.svg";
 
@@ -19,6 +19,7 @@ import Swap from "../assets/portfolio/swap.jpg";
 import NFT from "../assets/portfolio/nft.jpg";
 import Dex from "../assets/portfolio/unifactory.jpg";
 import CRM from "../assets/portfolio/grandbazarCRM.jpeg";
+import NursenPro from "../assets/portfolio/nursenpro.png";
 
 export const tab = [
   {
@@ -27,17 +28,22 @@ export const tab = [
     keyWord: "frontend",
   },
   {
-    id: 1,
+    id: 2,
     name: "Back-End",
     keyWord: "backend",
   },
   {
-    id: 1,
+    id: 3,
     name: "Web3",
     keyWord: "web3",
   },
   {
-    id: 1,
+    id: 4,
+    name: "Mobile",
+    keyWord: "mobile",
+  },
+  {
+    id: 5,
     name: "Other",
     keyWord: "other",
   },
@@ -66,11 +72,11 @@ export const skills = [
     id: 4,
     name: "React",
     keyWord: "frontend",
-    done: 75,
+    done: 90,
   },
   {
     id: 5,
-    name: "Redux | Redux Toolkit",
+    name: "Redux | Redux Toolkit | Pinia",
     keyWord: "frontend",
     done: 80,
   },
@@ -82,43 +88,43 @@ export const skills = [
   },
   {
     id: 7,
+    name: "Vue",
+    keyWord: "frontend",
+    done: 75,
+  },
+  {
+    id: 8,
     name: "jQuery",
     keyWord: "frontend",
     done: 50,
   },
   {
-    id: 8,
-    name: "REST API",
-    keyWord: "frontend",
-    done: 90,
-  },
-  {
     id: 9,
-    name: "AJAX",
-    keyWord: "frontend",
-    done: 90,
-  },
-  {
-    id: 10,
-    name: "Bootstrap | Tailwind | Material UI",
+    name: "Bootstrap | Tailwind | Material UI | Vuetify",
     keyWord: "frontend",
     done: 70,
   },
   {
-    id: 11,
+    id: 10,
     name: "Gulp | WebPack",
     keyWord: "frontend",
     done: 60,
   },
   {
-    id: 12,
+    id: 11,
     name: "Node.js",
     keyWord: "backend",
     done: 80,
   },
   {
-    id: 13,
+    id: 12,
     name: "Express.js",
+    keyWord: "backend",
+    done: 50,
+  },
+  {
+    id: 13,
+    name: "Nest.js",
     keyWord: "backend",
     done: 50,
   },
@@ -142,85 +148,74 @@ export const skills = [
   },
   {
     id: 17,
+    name: "PostgreSQL",
+    keyWord: "backend",
+    done: 70,
+  },
+  {
+    id: 18,
     name: "Solidity",
     keyWord: "web3",
     done: 35,
   },
   {
-    id: 18,
+    id: 19,
     name: "Web3.js",
     keyWord: "web3",
     done: 40,
   },
   {
-    id: 19,
+    id: 20,
     name: "Ethers.js",
     keyWord: "web3",
     done: 40,
   },
   {
-    id: 20,
+    id: 21,
     name: "HardHat",
     keyWord: "web3",
     done: 30,
   },
   {
-    id: 21,
+    id: 22,
     name: "Ganache",
     keyWord: "web3",
     done: 30,
   },
   {
-    id: 22,
-    name: "AWS | S3 | ES2 | CloudFlare",
+    id: 23,
+    name: "AWS | S3 | ES2",
     keyWord: "other",
     done: 50,
   },
   {
-    id: 23,
-    name: "Git | GitHub",
+    id: 24,
+    name: "Git | GitHub | GitLub",
     keyWord: "other",
     done: 70,
   },
   {
-    id: 24,
-    name: "C#",
-    keyWord: "other",
-    done: 25,
-  },
-  {
     id: 25,
-    name: "Python",
-    keyWord: "other",
-    done: 25,
-  },
-  {
-    id: 26,
-    name: "PhotoShop",
-    keyWord: "other",
-    done: 30,
-  },
-  {
-    id: 27,
     name: "Figma",
     keyWord: "other",
     done: 60,
   },
   {
-    id: 28,
+    id: 26,
     name: "Jira | Confluence",
     keyWord: "other",
     done: 80,
   },
   {
-    id: 29,
+    id: 27,
     name: "Miro",
     keyWord: "other",
     done: 80,
   },
+
   {
-    id: 31,
-    name: "WinSCP | PuTTY",
+    id: 28,
+    name: "Vercel | CloudFlare",
     keyWord: "other",
     done: 80,
   },
@@ -252,8 +247,38 @@ export const portfolioTab = [
     name: "Web3",
     keyWord: "web3",
   },
+  {
+    id: 6,
+    name: "Mobile",
+    keyWord: "mobile",
+  },
 ];
+
 export const projects = [
+  {
+    id: 18,
+    name: "nursenpro.online",
+    subtitle: "Comprehensive educational platform",
+    description:
+      "Handyman Service Website Developed a modern landing page for a handyman service company located in Sunnyvale, California. The website showcases services, provides customer reviews, and includes a contact system for generating leads. The project focuses on clean UI, responsive design, and SEO optimization to help the business attract local customers.",
+    tag: ["Front-End", "Desing"],
+    link: "https://nursenpro.online",
+    keyWord: ["frontend", "desing"],
+    img: NursenPro,
+    status: "Visit the website",
+  },
+  // {
+  //   id: 17,
+  //   name: "Agent - e-commerce platform",
+  //   subtitle: "Comprehensive educational platform",
+  //   description:
+  //     "Designed and developed Keis.kg from scratch, a full-stack educational platform for interactive learning. This project encompasses the entire development process, including design, backend implementation, frontend development, database setup, and more. Keis.kg offers a comprehensive educational experience with features such as course management, student assessments, and interactive lessons. Additionally  It also offers insights into the college's structure, providing students and educators with a holistic understanding of the institution.",
+  //   tag: ["Front-End", "Desing"],
+  //   link: "https://agrn.online",
+  //   keyWord: ["mobile", "backend", "desing"],
+  //   img: NursenPro,
+  //   status: "Visit the website",
+  // },
   {
     id: 16,
     name: "Keis.kg",
@@ -261,10 +286,58 @@ export const projects = [
     description:
       "Designed and developed Keis.kg from scratch, a full-stack educational platform for interactive learning. This project encompasses the entire development process, including design, backend implementation, frontend development, database setup, and more. Keis.kg offers a comprehensive educational experience with features such as course management, student assessments, and interactive lessons. Additionally  It also offers insights into the college's structure, providing students and educators with a holistic understanding of the institution.",
     tag: ["Front-End", "Backend", "Fullstack"],
-    link: "keis.kg",
+    link: "https://keis.kg",
     keyWord: ["frontend", "backend", "fullstack"],
     img: Keis,
     status: "Visit the website",
+  },
+  {
+    id: 15,
+    name: "FitLife",
+    subtitle: "Fitness and health website",
+    description:
+      "Developed FitLife, an application for tracking fitness and health activities. FitLife goes beyond traditional fitness tracking by offering a unique feature that unites all fitness centers across the United States. Users can purchase a unified membership for various categories, granting access to a network of fitness facilities nationwide. The application also includes goal setting, progress monitoring, workout plans, and nutritional information to support a healthy lifestyle.",
+    tag: ["Front-End"],
+    link: "Product not released yet",
+    keyWord: ["frontend"],
+    img: FitLife,
+    status: "Product not released yet",
+  },
+  {
+    id: 14,
+    name: "GrandBazar CRM",
+    subtitle: "Customer Relationship Management",
+    description:
+      "Created GrandBazar CRM to manage customer relationships and sales processes. The CRM system includes features such as contact management, sales tracking, and customer support tools. The aim was to streamline customer interactions, improve sales efficiency, and provide comprehensive insights into customer behavior, helping businesses build and maintain strong customer relationships.",
+    tag: ["Front-End"],
+    link: "",
+    keyWord: ["frontend"],
+    img: CRM,
+    status: "Product not released yet",
+  },
+  {
+    id: 13,
+    name: "GrandBazar",
+    subtitle: "E-commerce platform",
+    description:
+      "Developed GrandBazar, a comprehensive e-commerce platform for online retail. This platform offers a wide range of features including product listings, shopping cart, payment integration, and order management. The focus was on creating a seamless shopping experience for users, with intuitive navigation, secure payment options, and efficient backend support for merchants.",
+    tag: ["Front-End"],
+    link: "",
+    keyWord: ["frontend"],
+    img: Grandbazar,
+    status: "Product not released yet",
+  },
+  {
+    id: 12,
+    name: "GrandBazar Visit",
+    subtitle: "Company Website",
+    description:
+      "Developed GrandBazar Visit as a simple company website to showcase information about the company. This website serves as a virtual business card, providing visitors with an overview of the company's products, services, and mission. It offers essential details such as contact information, company history, and key personnel. GrandBazar Visit aims to create a professional online presence for the company, enhancing its visibility and credibility in the digital space.",
+    tag: ["Front-End"],
+    link: "",
+    keyWord: ["frontend"],
+    img: GrandbazarVisit,
+    status: "Product not released yet",
   },
   {
     id: 1,
@@ -398,192 +471,14 @@ export const projects = [
     img: Devcon,
     status: "The project has already expired",
   },
-  {
-    id: 12,
-    name: "GrandBazar Visit",
-    subtitle: "Company Website",
-    description:
-      "Developed GrandBazar Visit as a simple company website to showcase information about the company. This website serves as a virtual business card, providing visitors with an overview of the company's products, services, and mission. It offers essential details such as contact information, company history, and key personnel. GrandBazar Visit aims to create a professional online presence for the company, enhancing its visibility and credibility in the digital space.",
-    tag: ["Front-End"],
-    link: "",
-    keyWord: ["frontend"],
-    img: GrandbazarVisit,
-    status: "Product not released yet",
-  },
-  {
-    id: 13,
-    name: "GrandBazar",
-    subtitle: "E-commerce platform",
-    description:
-      "Developed GrandBazar, a comprehensive e-commerce platform for online retail. This platform offers a wide range of features including product listings, shopping cart, payment integration, and order management. The focus was on creating a seamless shopping experience for users, with intuitive navigation, secure payment options, and efficient backend support for merchants.",
-    tag: ["Front-End"],
-    link: "",
-    keyWord: ["frontend"],
-    img: Grandbazar,
-    status: "Product not released yet",
-  },
-  {
-    id: 14,
-    name: "GrandBazar CRM",
-    subtitle: "Customer Relationship Management",
-    description:
-      "Created GrandBazar CRM to manage customer relationships and sales processes. The CRM system includes features such as contact management, sales tracking, and customer support tools. The aim was to streamline customer interactions, improve sales efficiency, and provide comprehensive insights into customer behavior, helping businesses build and maintain strong customer relationships.",
-    tag: ["Front-End"],
-    link: "",
-    keyWord: ["frontend"],
-    img: CRM,
-    status: "Product not released yet",
-  },
-  {
-    id: 15,
-    name: "FitLife",
-    subtitle: "Fitness and health website",
-    description:
-      "Developed FitLife, an application for tracking fitness and health activities. FitLife goes beyond traditional fitness tracking by offering a unique feature that unites all fitness centers across the United States. Users can purchase a unified membership for various categories, granting access to a network of fitness facilities nationwide. The application also includes goal setting, progress monitoring, workout plans, and nutritional information to support a healthy lifestyle.",
-    tag: ["Front-End"],
-    link: "Product not released yet",
-    keyWord: ["frontend"],
-    img: FitLife,
-    status: "Product not released yet",
-  },
 ];
-
-// export const projects = [
-//   {
-//     id: 1,
-//     name: "Multi Currency Wallet",
-//     tag: ["Front-End", "Web3"],
-//     link: "/mcw",
-//     keyWord: ["web3", "frontend"],
-//     img: Swap,
-//   },
-//   {
-//     id: 2,
-//     name: "NFT marketplace",
-//     tag: ["Front-End"],
-//     link: "/nft-marketplace",
-//     keyWord: ["frontend"],
-//     img: NFT,
-//   },
-//   {
-//     id: 3,
-//     name: "FarmFactory",
-//     tag: ["Front-End", "Web3"],
-//     link: "/farmfactory",
-//     keyWord: ["web3", "frontend"],
-//     img: farmig,
-//   },
-//   {
-//     id: 4,
-//     name: "DAO Widget",
-//     tag: ["Front-End"],
-//     link: "/dao",
-//     keyWord: ["frontend"],
-//     img: Dao,
-//   },
-//   {
-//     id: 5,
-//     name: "MCW (Wallet + Exchange)",
-//     tag: ["Front-End", "Web3"],
-//     link: "/mcw-exchange",
-//     keyWord: ["web3", "frontend"],
-//     img: Wallet,
-//   },
-//   {
-//     id: 6,
-//     name: "CROSS-CHAIN exchange",
-//     tag: ["Front-End"],
-//     link: "/cross-chain",
-//     keyWord: ["frontend"],
-//     img: CrossChain,
-//   },
-//   {
-//     id: 7,
-//     name: "UniFactory",
-//     tag: ["Front-End", "Web3"],
-//     link: "/grandbazar",
-//     keyWord: ["web3", "frontend"],
-//     img: Dex,
-//   },
-//   {
-//     id: 7,
-//     name: "Dash Onout",
-//     tag: ["Front-End", "Web3"],
-//     link: "/grandbazar",
-//     keyWord: ["web3", "frontend"],
-//     img: DashOnout,
-//   },
-//   {
-//     id: 8,
-//     name: "Eth Paris",
-//     tag: ["backend"],
-//     link: "/grandbazar",
-//     keyWord: ["backend"],
-//     img: EthParis,
-//   },
-//   {
-//     id: 9,
-//     name: "Eth Barcelona",
-//     tag: ["backend"],
-//     link: "/grandbazar",
-//     keyWord: ["backend"],
-//     img: EthBcn,
-//   },
-//   {
-//     id: 10,
-//     name: "Devcon Bogota",
-//     tag: ["backend"],
-//     link: "/grandbazar",
-//     keyWord: ["backend"],
-//     img: Devcon,
-//   },
-//   {
-//     id: 11,
-//     name: "GrandBazar Visit",
-//     tag: ["Front-End"],
-//     link: "/grandbazar",
-//     keyWord: ["frontend"],
-//     img: GrandbazarVisit,
-//   },
-//   {
-//     id: 12,
-//     name: "GrandBazar",
-//     tag: ["Front-End"],
-//     link: "/grandbazar",
-//     keyWord: ["frontend"],
-//     img: Grandbazar,
-//   },
-//   {
-//     id: 13,
-//     name: "GrandBazar CRM",
-//     tag: ["Front-End"],
-//     link: "/grandbazar",
-//     keyWord: ["frontend"],
-//     img: Grandbazar,
-//   },
-//   {
-//     id: 14,
-//     name: "FitLife",
-//     tag: ["Front-End"],
-//     link: "/grandbazar",
-//     keyWord: ["frontend"],
-//     img: FitLife,
-//   },
-//   {
-//     id: 15,
-//     name: "Keis.kg",
-//     tag: ["Front-End"],
-//     link: "/grandbazar",
-//     keyWord: ["frontend", "backend", "fullstack"],
-//     img: Keis,
-//   },
-// ];
 
 export const numbers = [
   { id: 1, number: projects.length, name: "All" },
   { id: 2, number: 13, name: "Front-End" },
   { id: 3, number: 4, name: "Back-End" },
   { id: 4, number: 5, name: "Web3" },
+  { id: 4, number: 1, name: "Mobile" },
 ];
 
 export const jobs = [
@@ -596,24 +491,24 @@ export const jobs = [
     jobTitle: "Front-End and Blockchain Developer",
     text: "Developed blockchain solutions and front-end applications for various projects.",
   },
-  {
-    id: 2,
-    start: "11.2022",
-    finish: "03.2023",
-    companyName: "Kyrgyz Economic University",
-    city: "Kyrgyzstan, Bishkek",
-    jobTitle: "Front-End Mentor",
-    text: "Mentored students in Front-End development and best practices.",
-  },
-  {
-    id: 3,
-    start: "01.2023",
-    finish: "05.2023",
-    companyName: "Motion Web",
-    city: "Kyrgyzstan, Bishkek",
-    jobTitle: "Front-End Mentor",
-    text: "Guided new developers in modern Front-End development techniques.",
-  },
+  // {
+  //   id: 2,
+  //   start: "11.2022",
+  //   finish: "03.2023",
+  //   companyName: "Kyrgyz Economic University",
+  //   city: "Kyrgyzstan, Bishkek",
+  //   jobTitle: "Front-End Mentor",
+  //   text: "Mentored students in Front-End development and best practices.",
+  // },
+  // {
+  //   id: 3,
+  //   start: "01.2023",
+  //   finish: "05.2023",
+  //   companyName: "Motion Web",
+  //   city: "Kyrgyzstan, Bishkek",
+  //   jobTitle: "Front-End Mentor",
+  //   text: "Guided new developers in modern Front-End development techniques.",
+  // },
   {
     id: 4,
     start: "01.2022",
@@ -632,20 +527,29 @@ export const jobs = [
     jobTitle: "Front-End Developer",
     text: "Developed and maintained web applications for fitness enthusiasts.",
   },
+  {
+    id: 6,
+    start: "06.2024",
+    finish: "03.2025",
+    companyName: "O! Mobile Operator",
+    city: "Kyrgyzstan, Bishkek",
+    jobTitle: "Full-Stack Developer",
+    // text: "Developed and maintained web applications for fitness enthusiasts.",
+  },
 ];
 
 export const contatcsArr = [
   {
     id: 1,
-    link: "mailto:zhaparkulov02@gmail.com",
-    text: "zhaparkulov02@gmail.com",
+    link: "mailto:nasirdin.zhaparkulov@gmail.com",
+    text: "nasirdin.zhaparkulov@gmail.com",
     icon: Email,
   },
   {
     id: 1,
-    link: "tel:996703313274",
-    text: "+996 (703) 31-32-74",
-    icon: Phone,
+    link: "https://github.com/nasirdin",
+    text: "Nasirdin",
+    icon: Github,
   },
   {
     id: 1,
@@ -660,3 +564,4 @@ export const contatcsArr = [
     icon: Linkedin,
   },
 ];
+ 

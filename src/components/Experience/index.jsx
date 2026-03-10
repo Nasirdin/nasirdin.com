@@ -24,7 +24,7 @@ const Experience = () => {
           three years of experience.
         </motion.p>
         <ul className="experience__items">
-          {jobs.reverse().map((item, indx) => (
+          {[...jobs].reverse().map((item, indx) => (
             <motion.li
               initial="hidden"
               whileInView="visible"

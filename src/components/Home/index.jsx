@@ -8,6 +8,7 @@ import { downAnimation, leftAnimation, rightAnimation } from "../../Animations";
 // ---- Components ---- //
 
 const Home = () => {
+  
   return (
     <motion.div className="home" initial="hidden" whileInView="visible">
       <div className="container">
@@ -19,7 +20,6 @@ const Home = () => {
           >
             <div className="home__animBlock animBlock">
               <div className="animBlock__one">
-                <img src="" alt="" />
               </div>
               <div className="animBlock__two"></div>
               <div className="animBlock__three"></div>
