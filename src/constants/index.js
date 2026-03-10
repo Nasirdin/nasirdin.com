@@ -553,8 +553,8 @@ export const contatcsArr = [
   },
   {
     id: 1,
-    link: "https://t.me/NasirdinDev",
-    text: "@NasirdinDev",
+    link: "https://t.me/nzhaparkulov",
+    text: "@nzhaparkulov",
     icon: Telegram,
   },
   {
